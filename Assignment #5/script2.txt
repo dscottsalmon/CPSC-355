@@ -1,0 +1,15 @@
+Script started on 2022-11-24 21:37:53-07:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="211" LINES="50"]
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ ./a5b.o 03 21
+[?2004lMarch 21st is Winter
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ .a[K/a5b.o 03 22
+[?2004lMarch 22nd is Spring
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ ./a5b.o 10 01
+[?2004lOctober 1st is Fall
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ .a5[K[K/a5b.o 07
+[?2004lusage: a5b mm dd
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ ./a5b.o 07 07 07
+[?2004lusage: a5b mm dd
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ exit
+[?2004lexit
+
+Script done on 2022-11-24 21:38:58-07:00 [COMMAND_EXIT_CODE="17"]

@@ -1,0 +1,258 @@
+Script started on 2022-11-25 15:12:54-07:00 [TERM="xterm-256color" TTY="/dev/pts/34" COLUMNS="120" LINES="30"]
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ ./a5a
+[?2004l[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+Press the return key to continue . . . 2 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+Press the return key to continue . . . 2
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 666
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  666 <-- head of queue <-- tail of queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 420
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 69
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 8008135
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  666 <-- head of queue
+  420
+  69
+  8008135 <-- tail of queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? w 2
+
+Dequeued value is 666
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 666
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 2001
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 2022
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 11
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 25
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  420 <-- head of queue
+  69
+  8008135
+  666
+  2001
+  2022
+  11
+  25 <-- tail of queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 55  100
+
+Queue overflow! Cannot enqueue into a full queue.
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 150
+
+Queue overflow! Cannot enqueue into a full queue.
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 420
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 420
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  69 <-- head of queue
+  8008135
+  666
+  2001
+  2022
+  11
+  25
+  420 <-- tail of queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 69
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 8008135
+Press the return key to continue . . . 2 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 666
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 2001
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  2022 <-- head of queue
+  11
+  25
+  420 <-- tail of queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 2022
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 11
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 25
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 420
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 4
+
+Terminating program
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment5[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment5$ exit
+[?2004lexit
+
+Script done on 2022-11-25 15:15:01-07:00 [COMMAND_EXIT_CODE="0"]

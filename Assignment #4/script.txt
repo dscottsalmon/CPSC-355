@@ -1,0 +1,201 @@
+Script started on 2022-11-01 14:11:46-06:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="211" LINES="50"]
+]0;david.salmon@csa3:~/CPSC355/assignments/Assignment4[?2004hdavid.salmon@csa3:~/CPSC355/assignments/Assignment4$ gdb assign4.o
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign4.o[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32massign4.o[m)
+[?2004h(gdb) b*main
+[?2004lBreakpoint 1 at [34m0x400898[m
+[?2004h(gdb) b*exit
+[?2004lBreakpoint 2 at [34m0x400928[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/david.salmon/CPSC355/assignments/Assignment4/assign4.o[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x0000000000400898[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) display/i $pc
+[?2004l1: x/i $pc
+=> [34m0x400898[m <[33mmain[m>:	stp	x29, x30, [sp, #-32]!
+[?2004h(gdb) x/12d $fp+16
+[?2004l[34m0xfffffffff0e0[m:	0	0	4195764	0
+[34m0xfffffffff0f0[m:	0	1	-3512	65535
+[34m0xfffffffff100[m:	-3512	65535	1	0
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040089c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x40089c[m <[33mmain[m+4>:	mov	x29, sp
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008a0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008a0[m <[33mmain[m+8>:	add	x8, x29, #0x10
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008a4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008a4[m <[33mmain[m+12>:	bl	[34m0x400734[m <[33mnewCuboid[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008a8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008a8[m <[33mmain[m+16>:	add	x8, x29, #0x28
+[?2004h[?2004l[?2004h(gdb) nix/12d $fp+16
+[?2004l[34m0xfffffffff0c0[m:	0	0	2	2
+[34m0xfffffffff0d0[m:	3	12	-136088416	65535
+[34m0xfffffffff0e0[m:	0	0	4195764	0
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004008ac[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008ac[m <[33mmain[m+20>:	bl	[34m0x400734[m <[33mnewCuboid[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008b0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008b0[m <[33mmain[m+24>:	adrp	x0, [34m0x400000[m
+[?2004h[?2004l[?2004h(gdb) nix/12d $fp+16[C[C[C[C[C[Cni[Kx/12d $fp+16
+[?2004l[34m0xfffffffff0c0[m:	0	0	2	2
+[34m0xfffffffff0d0[m:	3	12	0	0
+[34m0xfffffffff0e0[m:	2	2	3	12
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004008b4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008b4[m <[33mmain[m+28>:	add	x0, x0, #0x6f3
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008b8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008b8[m <[33mmain[m+32>:	bl	[34m0x400540[m <[33mprintf@plt[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lInitial Cuboid Values: 
+[34m0x00000000004008bc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008bc[m <[33mmain[m+36>:	add	x0, x29, #0x10
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008c0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008c0[m <[33mmain[m+40>:	ldr	w1, [34m0x400930[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008c4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008c4[m <[33mmain[m+44>:	bl	[34m0x400810[m <[33mprintCuboid[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lCuboid First Origin = (0, 0)
+	Base Width = 2	Base length = 2
+	Height = 3
+	Volume = 12
+
+
+[34m0x00000000004008c8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008c8[m <[33mmain[m+48>:	add	x0, x29, #0x28
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008cc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008cc[m <[33mmain[m+52>:	ldr	w1, [34m0x400934[m <[33mexit[m+12>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008d0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008d0[m <[33mmain[m+56>:	bl	[34m0x400810[m <[33mprintCuboid[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lCuboid Second Origin = (0, 0)
+	Base Width = 2	Base length = 2
+	Height = 3
+	Volume = 12
+
+
+[34m0x00000000004008d4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008d4[m <[33mmain[m+60>:	add	x0, x29, #0x10
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008d8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008d8[m <[33mmain[m+64>:	add	x1, x29, #0x28
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008dc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008dc[m <[33mmain[m+68>:	bl	[34m0x40084c[m <[33mequalSize[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008e0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008e0[m <[33mmain[m+72>:	cmp	w0, #0x1
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008e4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008e4[m <[33mmain[m+76>:	b.ne	[34m0x400904[m <[33melse[m>  // b.any
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008e8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008e8[m <[33mmain[m+80>:	add	x0, x29, #0x10
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008ec[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008ec[m <[33mmain[m+84>:	mov	w1, #0x3                   	// #3
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008f0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008f0[m <[33mmain[m+88>:	mov	w2, #0xfffffffa            	// #-6
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008f4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008f4[m <[33mmain[m+92>:	bl	[34m0x4007a8[m <[33mmove[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008f8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008f8[m <[33mmain[m+96>:	add	x0, x29, #0x28
+[?2004h[?2004l[?2004h(gdb) nix/12d $fp+16[C[C[C[C[C[Cni[Kx/12d $fp+16[C[C[C[C[C[Cni[Kx/12d $fp+16
+[?2004l[34m0xfffffffff0c0[m:	3	-6	2	2
+[34m0xfffffffff0d0[m:	3	12	0	0
+[34m0xfffffffff0e0[m:	2	2	3	12
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004008fc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4008fc[m <[33mmain[m+100>:	mov	w1, #0x4                   	// #4
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400900[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x400900[m <[33mmain[m+104>:	bl	[34m0x4007d0[m <[33mscale[m>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004lChanged Cuboid Values: 
+Cuboid First Origin = (3, -6)
+	Base Width = 2	Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Cuboid Second Origin = (0, 0)
+	Base Width = 8	Base length = 8
+	Height = 12
+	Volume = 768
+
+
+
+Breakpoint 2, [34m0x0000fffff7e4d480[m in [33mexit[m () from [32m/lib64/libc.so.6[m
+1: x/i $pc
+=> [34m0xfffff7e4d480[m <[33mexit[m>:	paciasp
+[?2004h[?2004l[?2004h(gdb) x/d[K12d $fp-16
+[?2004l[34m0xfffffffff0c0[m:	3	-6	2	2
+[34m0xfffffffff0d0[m:	3	12	0	0
+[34m0xfffffffff0e0[m:	8	8	12	768
+[?2004h(gdb) ccc[K[K
+[?2004lContinuing.
+[Inferior 1 (process 1755459) exited with code 0133]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l]0;david.salmon@csa3:~/CPSC355/assignments/Assignment4[?2004hdavid.salmon@csa3:~/CPSC355/assignments/Assignment4$ exit
+[?2004lexit
+
+Script done on 2022-11-01 14:14:40-06:00 [COMMAND_EXIT_CODE="0"]

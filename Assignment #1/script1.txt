@@ -1,0 +1,508 @@
+Script started on 2022-09-27 13:34:00-06:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="211" LINES="50"]
+]0;david.salmon@csa2:~/CPSC355/assignments/Assignment1[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment1$ gdb assign1a.o
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign1a.o[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+(No debugging symbols found in [32massign1a.o[m)
+[?2004h(gdb) b*main
+[?2004lBreakpoint 1 at [34m0x4006cc[m
+[?2004h(gdb) b*exit
+[?2004lBreakpoint 2 at [34m0x400758[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/david.salmon/CPSC355/assignments/Assignment1/assign1a.o[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004006cc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) display/i/[K $pc
+[?2004l1: x/i $pc
+=> [34m0x4006cc[m <[33mmain[m>:	stp	x29, x30, [sp, #-16]!
+[?2004h(gdb) display $x19
+[?2004l2: $x19 = 281474976707144
+[?2004h(gdb) display $x20
+[?2004l3: $x20 = 1
+[?2004h(gdb) display $x25
+[?2004l4: $x25 = 0
+[?2004h(gdb) display $x21
+[?2004l5: $x21 = 4324848
+[?2004h(gdb) display $x22
+[?2004l6: $x22 = 4195764
+[?2004h(gdb) display x[K$x23
+[?2004l7: $x23 = 281474976707160
+[?2004h(gdb) display $x24[K4
+[?2004l8: $x24 = 281474842483464
+[?2004h(gdb) display $x27
+[?2004l9: $x27 = 4324848
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004006d0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006d0[m <[33mmain[m+4>:	mov	x29, sp
+2: $x19 = 281474976707144
+3: $x20 = 1
+4: $x25 = 0
+5: $x21 = 4324848
+6: $x22 = 4195764
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006d4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006d4[m <[33mmain[m+8>:	mov	x19, #0xfffffffffffffff5    	// #-11
+2: $x19 = 281474976707144
+3: $x20 = 1
+4: $x25 = 0
+5: $x21 = 4324848
+6: $x22 = 4195764
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006d8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006d8[m <[33mmain[m+12>:	mov	x20, #0x0                   	// #0
+2: $x19 = -11
+3: $x20 = 1
+4: $x25 = 0
+5: $x21 = 4324848
+6: $x22 = 4195764
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006dc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006dc[m <[33mmain[m+16>:	mov	x21, #0x0                   	// #0
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = 0
+5: $x21 = 4324848
+6: $x22 = 4195764
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006e0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006e0[m <[33mmain[m+20>:	mov	x22, #0xfffffffffffffffc    	// #-4
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = 0
+5: $x21 = 0
+6: $x22 = 4195764
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006e4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006e4[m <[33mmain[m+24>:	mov	x23, #0x12d                 	// #301
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = 0
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 281474976707160
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006e8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006e8[m <[33mmain[m+28>:	mov	x24, #0x38                  	// #56
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = 0
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 281474842483464
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006ec[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006ec[m <[33mmain[m+32>:	mov	x25, #0xffffffffffff63c0    	// #-40000
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = 0
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006f0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4006f0[m <[33mmain[m+36>:	mov	x27, #0x0                   	// #0
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 4324848
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006f4[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x4006f4[m <[33mtop[m>:	mov	x20, #0x0                   	// #0
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006f8[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x4006f8[m <[33mtop[m+4>:	add	x19, x19, #0x1
+2: $x19 = -11
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006fc[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x4006fc[m <[33mtop[m+8>:	mov	x21, x19
+2: $x19 = -10
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = 0
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400700[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400700[m <[33mtop[m+12>:	cmp	x19, #0xa
+2: $x19 = -10
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400704[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400704[m <[33mtop[m+16>:	b.gt	[34m0x400758[m <[33mexit[m>
+2: $x19 = -10
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400708[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400708[m <[33mtop[m+20>:	sub	x20, x20, #0x67
+2: $x19 = -10
+3: $x20 = 0
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000040070c[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x40070c[m <[33mtop[m+24>:	mul	x27, x21, x24
+2: $x19 = -10
+3: $x20 = -103
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 0
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400710[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400710[m <[33mtop[m+28>:	add	x20, x20, x27
+2: $x19 = -10
+3: $x20 = -103
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -560
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400714[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400714[m <[33mtop[m+32>:	mul	x21, x19, x19
+2: $x19 = -10
+3: $x20 = -663
+4: $x25 = -40000
+5: $x21 = -10
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -560
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400718[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400718[m <[33mtop[m+36>:	mul	x27, x21, x23
+2: $x19 = -10
+3: $x20 = -663
+4: $x25 = -40000
+5: $x21 = 100
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -560
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000040071c[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x40071c[m <[33mtop[m+40>:	add	x20, x20, x27
+2: $x19 = -10
+3: $x20 = -663
+4: $x25 = -40000
+5: $x21 = 100
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 30100
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400720[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400720[m <[33mtop[m+44>:	mul	x21, x19, x21
+2: $x19 = -10
+3: $x20 = 29437
+4: $x25 = -40000
+5: $x21 = 100
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 30100
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400724[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400724[m <[33mtop[m+48>:	mul	x21, x19, x21
+2: $x19 = -10
+3: $x20 = 29437
+4: $x25 = -40000
+5: $x21 = -1000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 30100
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400728[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400728[m <[33mtop[m+52>:	mul	x27, x21, x22
+2: $x19 = -10
+3: $x20 = 29437
+4: $x25 = -40000
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = 30100
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000040072c[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x40072c[m <[33mtop[m+56>:	add	x20, x20, x27
+2: $x19 = -10
+3: $x20 = 29437
+4: $x25 = -40000
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400730[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400730[m <[33mtop[m+60>:	cmp	x20, x25
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -40000
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400734[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400734[m <[33mtop[m+64>:	b.lt	[34m0x40073c[m <[33mnext[m>  // b.tstop
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -40000
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400738[m in [33mtop[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mtop[m+68>:	mov	x25, x20
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -40000
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000040073c[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mnext[m>:	adrp	x0, [34m0x400000[m
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400740[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x400740[m <[33mnext[m+4>:	add	x0, x0, #0x698
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400744[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x400744[m <[33mnext[m+8>:	mov	x1, x19
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400748[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x400748[m <[33mnext[m+12>:	mov	x2, x20
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000040074c[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x40074c[m <[33mnext[m+16>:	mov	x3, x25
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000400750[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x400750[m <[33mnext[m+20>:	bl	[34m0x400540[m <[33mprintf@plt[m>
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004ly = f(-10) = -10563, Current Maximum 'y' value is: -10563
+[34m0x0000000000400754[m in [33mnext[m ()
+1: x/i $pc
+=> [34m0x400754[m <[33mnext[m+24>:	b	[34m0x4006f4[m <[33mtop[m>
+2: $x19 = -10
+3: $x20 = -10563
+4: $x25 = -10563
+5: $x21 = 10000
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+y = f(-9) = -2470, Current Maximum 'y' value is: -2470
+y = f(-8) = 2329, Current Maximum 'y' value is: 2329
+y = f(-7) = 4650, Current Maximum 'y' value is: 4650
+y = f(-6) = 5213, Current Maximum 'y' value is: 5213
+y = f(-5) = 4642, Current Maximum 'y' value is: 5213
+y = f(-4) = 3465, Current Maximum 'y' value is: 5213
+y = f(-3) = 2114, Current Maximum 'y' value is: 5213
+y = f(-2) = 925, Current Maximum 'y' value is: 5213
+y = f(-1) = 138, Current Maximum 'y' value is: 5213
+y = f(0) = -103, Current Maximum 'y' value is: 5213
+y = f(1) = 250, Current Maximum 'y' value is: 5213
+y = f(2) = 1149, Current Maximum 'y' value is: 5213
+y = f(3) = 2450, Current Maximum 'y' value is: 5213
+y = f(4) = 3913, Current Maximum 'y' value is: 5213
+y = f(5) = 5202, Current Maximum 'y' value is: 5213
+y = f(6) = 5885, Current Maximum 'y' value is: 5885
+y = f(7) = 5434, Current Maximum 'y' value is: 5885
+y = f(8) = 3225, Current Maximum 'y' value is: 5885
+y = f(9) = -1462, Current Maximum 'y' value is: 5885
+y = f(10) = -9443, Current Maximum 'y' value is: 5885
+
+Breakpoint 2, [33m__GI_exit[m ([36mstatus[m=54) at [32mexit.c[m:143
+143	  [01m__run_exit_handlers[m [31m([mstatus[31m,[m [31m&[m__exit_funcs[31m,[m true[31m,[m true[31m);[m
+1: x/i $pc
+=> [34m0xfffff7e4d480[m <[33m__GI_exit[m>:	paciasp
+2: $x19 = 11
+3: $x20 = 0
+4: $x25 = 5885
+5: $x21 = 11
+6: $x22 = -4
+7: $x23 = 301
+8: $x24 = 56
+9: $x27 = -40000
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 2245963] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l]0;david.salmon@csa2:~/CPSC355/assignments/Assignment1[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment1$ exit
+[?2004lexit
+
+Script done on 2022-09-27 13:37:15-06:00 [COMMAND_EXIT_CODE="0"]
