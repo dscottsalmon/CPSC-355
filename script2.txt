@@ -1,71 +1,0 @@
-Script started on 2022-09-27 20:51:04-06:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="163" LINES="30"]
-]0;david.salmon@csa2:~/CPSC355/assignments/Assignment1[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment1$ gdb assign1b.o
-[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
-Copyright (C) 2022 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-Type "show copying" and "show warranty" for details.
-This GDB was configured as "aarch64-redhat-linux-gnu".
-Type "show configuration" for configuration details.
-For bug reporting instructions, please see:
-<https://www.gnu.org/software/gdb/bugs/>.
-Find the GDB manual and other documentation resources online at:
-    <http://www.gnu.org/software/gdb/documentation/>.
-
-For help, type "help".
-Type "apropos word" to search for commands related to "word"...
-Reading symbols from [32massign1b.o[m...
-[?2004h(gdb) b *main
-[?2004lBreakpoint 1 at [34m0x4006cc[m: file [32massign1b.s[m, line 27.
-[?2004h(gdb) b *exit
-[?2004lBreakpoint 2 at [34m0x400748[m: file [32massign1b.s[m, line 73.
-[?2004h(gdb) r
-[?2004lStarting program: [32m/home/uga/david.salmon/CPSC355/assignments/Assignment1/assign1b.o[m 
-[?2004h
-This GDB supports auto-downloading debuginfo from the following URLs:
-https://debuginfod.fedoraproject.org/ 
-Enable debuginfod for this session? (y or [n]) y
-[?2004lDebuginfod has been enabled.
-To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
-[Thread debugging using libthread_db enabled]
-Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
-
-Breakpoint 1, [33mmain[m () at [32massign1b.s[m:27
-27		stp	x[35m29[m[31m,[m x[35m30[m[31m,[m [31m[[m[32msp[m[31m,[m [31m-[m[35m16[m[31m]![m			[31m//[mSave FP [01;34mand[m LR to the Stack
-[?2004h[?2004l[?2004h(gdb) c
-[?2004lContinuing.
-y = f(-10) = -10563, Current Maximum 'y' value is: -10563
-y = f(-9) = -2470, Current Maximum 'y' value is: -2470
-y = f(-8) = 2329, Current Maximum 'y' value is: 2329
-y = f(-7) = 4650, Current Maximum 'y' value is: 4650
-y = f(-6) = 5213, Current Maximum 'y' value is: 5213
-y = f(-5) = 4642, Current Maximum 'y' value is: 5213
-y = f(-4) = 3465, Current Maximum 'y' value is: 5213
-y = f(-3) = 2114, Current Maximum 'y' value is: 5213
-y = f(-2) = 925, Current Maximum 'y' value is: 5213
-y = f(-1) = 138, Current Maximum 'y' value is: 5213
-y = f(0) = -103, Current Maximum 'y' value is: 5213
-y = f(1) = 250, Current Maximum 'y' value is: 5213
-y = f(2) = 1149, Current Maximum 'y' value is: 5213
-y = f(3) = 2450, Current Maximum 'y' value is: 5213
-y = f(4) = 3913, Current Maximum 'y' value is: 5213
-y = f(5) = 5202, Current Maximum 'y' value is: 5213
-y = f(6) = 5885, Current Maximum 'y' value is: 5885
-y = f(7) = 5434, Current Maximum 'y' value is: 5885
-y = f(8) = 3225, Current Maximum 'y' value is: 5885
-y = f(9) = -1462, Current Maximum 'y' value is: 5885
-y = f(10) = -9443, Current Maximum 'y' value is: 5885
-
-Breakpoint 2, [33m__GI_exit[m ([36mstatus[m=54) at [32mexit.c[m:143
-143	  [01m__run_exit_handlers[m [31m([mstatus[31m,[m [31m&[m__exit_funcs[31m,[m true[31m,[m true[31m);[m
-[?2004h[?2004l[?2004h(gdb) q
-[?2004l[?2004hA debugging session is active.
-
-	Inferior 1 [process 2329976] will be killed.
-
-Quit anyway? (y or n) y
-[?2004l]0;david.salmon@csa2:~/CPSC355/assignments/Assignment1[?2004hdavid.salmon@csa2:~/CPSC355/assignments/Assignment1$ exit
-[?2004lexit
-
-Script done on 2022-09-27 20:51:56-06:00 [COMMAND_EXIT_CODE="0"]
